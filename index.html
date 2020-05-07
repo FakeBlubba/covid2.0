@@ -16,29 +16,27 @@
   <nav class="navbar">
     <ul class="nav-titles">
       <li><div class="box-logo">
-        
-        <a id="logo" href="index.html">Senexilium</a></li>
+        <a id="logo" href="index.html">Senexilium</a></div></li>
+        <li><a href="#news"><i class="fas fa-newspaper"></i> Notizie</a></li>
+        <li><a href="#suggestion"><i class="fas fa-hands-wash"></i> Prevenzione</a></li>
+        <li><a href="#news"><i class="fas fa-concierge-bell"></i> Servizi</a></li>
+        <li><a href="#stats"><i class="fas fa-virus"></i> Dati</a></li>
+      </ul>
+      <ul>
       <li><a id="login" href="#accesso"><div class="login-container" > <i class="fas fa-user-circle"></i> <span>Accesso</span></div></a></li>
     </ul>
+</nav>
+<nav class="mobile-navbar">
+  <ul class="mobile-navbar-titles">
+    <li><a id="burger-menu" href="#mobile-menu"><i class="fas fa-bars"></i></a></li>
+    <li><a id="logo" href="index.html">Senexilium</a></li>
+    <li><a id="mobile-login" href="#accesso">Login</a></li>
+  </ul>
 
-  <nav class="mobile-navbar">
-    <ul class="mobile-navbar-titles">
-      <li><a id="burger-menu" href="#mobile-menu"><i class="fas fa-bars"></i></a></li>
-      <li><a id="logo" href="index.html">Senexilium</a></li>
-      <li><a id="mobile-login" href="#accesso">Login</a></li>
-    </ul>
-
-  </nav>
-  <div class="flag-container">
-      
-    <div class="flag green"></div>
-    <div class="flag white"></div>
-    <div class="flag red"></div>
-  </div>
 </nav>
 
   <div class="container">
-    <section>
+    <section id="news">
       <h1 class="main-title"><i class="fas fa-newspaper"></i> News - Le ultime notizie su COVID-19</h1>
 
       <div class="article-container">
@@ -97,27 +95,41 @@
          <div class="big-line black"></div>
          
          
-          <section><h1 class="main-title"> <i class="fas fa-hands-wash"></i>I consigli igenici del giorno</h1>
+          <section id="suggestion">
+          <h1 class="main-title"> <i class="fas fa-hands-wash"></i> Per convivere con il virus</h1>
+            <div class="main-introduction">
+              <p>Di seguito sono riportati alcuni consigli igenici che è consigliabile 
+                rispettare quando si è fuori casa.
+              </p>
+            
+            </div>
             <div class="warning-container">
               <div class="warning-message">
                 <span><div class="quote-container"></div> Lavarsi spesso le mani. </span> <i class="fas fa-shield-virus"></i>
               </div>
               <div class="warning-message">
-                <span><div class="quote-container"></div> Distanziarsi a 2 metri dagli altri.</span> <i class="fas fa-shield-virus"></i>
+                <span><div class="quote-container"></div> Mantenere 2 almeno metri di distanza dagli altri</span> <i class="fas fa-shield-virus"></i>
               </div>
               <div class="warning-message">
                 <span><div class="quote-container"></div> Evitare abbracci o strette di mano.</span> <i class="fas fa-shield-virus"></i>
               </div>
               <div class="warning-message">
-                <span><div class="quote-container"></div>  Non toccarsi occhi, naso e bocca con le mani.</span> <i class="fas fa-shield-virus"></i>
+                <span><div class="quote-container"></div> Non toccarsi occhi, naso e bocca con le mani.</span> <i class="fas fa-shield-virus"></i>
               </div>
             </div>
         </section>
 
         <div class="big-line black"></div>
 
-        <section>
+        <section id="service">
           <h1 class="main-title"><i class="fas fa-concierge-bell"></i> Servizi</h1>
+          <div class="main-introduction">
+            <p>In questa sezione è possibile accedere a una serie di servizi per gestire
+              l'emergenza sanitaria attuale:
+              
+            </p>
+          
+          </div>
           <div class="services-container">
             <div class="card">
               <img src="media/autocertificazione.jpg"/>
@@ -146,12 +158,17 @@
 
     <div class="big-line black"></div>
 
-    <section>
+    <section id="stats">
       <h1 class="main-title"><i class="fas fa-virus"></i> Situazione COVID-19 in Italia</h1>
-      <div class="contatore">
-        <p class="second-desc">Di seguito è riportato lo storico degli ultimi dati segnalati dalla
-          Protezione Civile riguardo al COVID-19.
+      <div class="main-introduction">
+        <p>In questa sezione è possibile visualizzare gli aggiornamenti sulla situazione 
+          COVID-19 in Italia con gli ultimi dati forniti dalla Protezione Civile. 
+          
         </p>
+      
+      </div>
+     
+      <div class="contatore">
         <table>
           <caption><i class="fas fa-head-side-mask"></i> <span>Contatore infetti <i class="date">[25/05/2015]</i></span></caption>
           <tr>
@@ -179,8 +196,8 @@
 <footer>
   <div class="footer-container">
     <div class="footer-desc">
-      <h4 class="minor-title"><i class="fas fa-info-circle"></i> Cos'è Senexilium?</h4>
-      <span class="first-page-desc">Senexilium è un progetto universitario realizzato per
+      <h4><i class="fas fa-info-circle"></i> Cos'è Senexilium?</h4>
+      <span>Senexilium è un progetto universitario realizzato per
         fronteggiare l'emergenza epidemiologica legata COVID-19.
         Con <b>Senexilium</b> è possibile ordinare la propria spesa
         direttamente alla protezione civile, controllare lo stato dei
@@ -189,7 +206,7 @@
       </span>
     </div>
     <div class="contacts">
-      <h4 class="minor-title"><i class="fas fa-phone-square-alt"></i> Numeri d'emergenza</h4>
+      <h4><i class="fas fa-phone-square-alt"></i> Numeri d'emergenza</h4>
       <ul>
         <li>Basilicata: <a href="tel:800 99 66 88">800 99 66 88</a></li>
         <li>Calabria: <a href="tel:800 76 76 76">800 76 76 76</a></li>
@@ -214,7 +231,7 @@
       </ul>
     </div>
     <div class="websites">
-      <h4 class="minor-title"><i class="far fa-window-restore"></i> Altre informazioni</h4>
+      <h4><i class="far fa-window-restore"></i> Altre informazioni</h4>
       <ul>
         <li><a href="http://www.governo.it/" target="_blank">Governo</a></li>
         <li><a href="https://www.interno.gov.it/it" target="_blank">Ministero degli Interni</a></li>
@@ -228,7 +245,7 @@
 
   <div class="down-footer-container">
     <a href="https://www.unito.it/" target="_blank"><img id="foot-logo" src="media/Unito.png"/></a>
-    <span id="back-to-the-top"><a href="#top">Torna su <i class="fas fa-arrow-alt-circle-up"></i></a></span>
+    <a href="#top"><span id="back-to-the-top">Torna su <i class="fas fa-arrow-alt-circle-up"></i></a></span>
   </div>
 
 </footer>
@@ -236,7 +253,9 @@
 </html>
 
 
-<script>var docWidth = document.documentElement.offsetWidth;
+<script>
+
+var docWidth = document.documentElement.offsetWidth;
 
   [].forEach.call(
     document.querySelectorAll('*'),
