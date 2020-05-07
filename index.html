@@ -18,11 +18,11 @@
       <li><div class="box-logo">
         <a id="logo" href="index.html">Senexilium</a></div></li>
         <li><a href="#news"><i class="fas fa-newspaper"></i> Notizie</a></li>
-        <li><a href="#suggestion"><i class="fas fa-hands-wash"></i> Prevenzione</a></li>
-        <li><a href="#news"><i class="fas fa-concierge-bell"></i> Servizi</a></li>
+        <li><a href="#suggestion"><i class="fas fa-hands-wash"></i> Igene</a></li>
+        <li><a href="#services"><i class="fas fa-concierge-bell"></i> Servizi</a></li>
         <li><a href="#stats"><i class="fas fa-virus"></i> Dati</a></li>
       </ul>
-      <ul>
+      <ul class="right-navbar">
       <li><a id="login" href="#accesso"><div class="login-container" > <i class="fas fa-user-circle"></i> <span>Accesso</span></div></a></li>
     </ul>
 </nav>
@@ -36,11 +36,11 @@
 </nav>
 
   <div class="container">
-    <section id="news">
+    <section>
       <h1 class="main-title"><i class="fas fa-newspaper"></i> News - Le ultime notizie su COVID-19</h1>
 
       <div class="article-container">
-        <div class="top-news-container">
+        <div  id="news" class="top-news-container">
       <img src="https://www.ilmessaggero.it/photos/MED/18/35/5201835_1754_the_first_genetic.jpg" alt="Immagine notizia attendibile"/>
         </div>
       <div class="article-info-container">
@@ -75,7 +75,7 @@
 
           <div class="arrow-slideshow">
             <a class="prev-link" href="#left-page">
-              <div class="prev-arrow-and-text-container">
+              <div class="prev-arrow-and-text-container selectable">
 
               <div class="prev-icn"><i class="fas fa-arrow-alt-circle-left"></i></div>
               <div class="prev-text"><span>Precedente</span></div>
@@ -83,7 +83,7 @@
             </a>
 
                 <a class="next-link" href="#right-page">
-                  <div class="next-arrow-and-text-container">
+                  <div class="next-arrow-and-text-container selectable">
                   <div class="next-text"><span>Successivo</span></div>
                   <div class="next-icn"><i class="fas fa-arrow-alt-circle-right"></i></div>
                   </div>
@@ -92,10 +92,10 @@
 
           </div>
          
-         <div class="big-line black"></div>
+         <div id="suggestion" class="big-line black"></div>
          
          
-          <section id="suggestion">
+          <section>
           <h1 class="main-title"> <i class="fas fa-hands-wash"></i> Per convivere con il virus</h1>
             <div class="main-introduction">
               <p>Di seguito sono riportati alcuni consigli igenici che è consigliabile 
@@ -119,9 +119,9 @@
             </div>
         </section>
 
-        <div class="big-line black"></div>
+        <div id="services" class="big-line black"></div>
 
-        <section id="service">
+        <section>
           <h1 class="main-title"><i class="fas fa-concierge-bell"></i> Servizi</h1>
           <div class="main-introduction">
             <p>In questa sezione è possibile accedere a una serie di servizi per gestire
@@ -131,14 +131,14 @@
           
           </div>
           <div class="services-container">
-            <div class="card">
+            <div class="card selectable">
               <img src="media/autocertificazione.jpg"/>
               <div><h2>Autocertificazione <i class="fas fa-file-invoice"></i> </h2>
               <p>Qui è possibile ricevere la propria <b>autocertificazione già compilata</b>.
               E' necessario munirsi solamente del proprio codice fiscale e nulla più. Prova adesso!</p>
           </div>
             </div>
-          <div class="card">
+          <div class="card selectable">
             <img src="media/spesa.jpg"/>
             <div><h2>Richiedi la tua spesa <i class="fas fa-shopping-cart"></i> </h2>
               <p><b>Vuoi la tua spesa?</b> Qui potrai usufruire del servizio offerto dalla <b>Protezione Civile</b>
@@ -146,7 +146,7 @@
         </div>
           </div>
 
-          <div class="card">
+          <div class="card selectable">
             <img src="media/donate.jpg"/>
             <div><h2>Dona <i class="fas fa-hand-holding-medical"></i> </h2>
               <p>Dai il tuo contributo alle strutture che si trovano
@@ -156,39 +156,41 @@
         </div>
     </section>
 
-    <div class="big-line black"></div>
+    <div id="stats" class="big-line black"></div>
 
-    <section id="stats">
+    <section>
       <h1 class="main-title"><i class="fas fa-virus"></i> Situazione COVID-19 in Italia</h1>
       <div class="main-introduction">
-        <p>In questa sezione è possibile visualizzare gli aggiornamenti sulla situazione 
-          COVID-19 in Italia con gli ultimi dati forniti dalla Protezione Civile. 
+        <p>In questa sezione è possibile visualizzare gli aggiornamenti degli ultimi dati forniti dal
+          <a href="http://www.salute.gov.it/portale/nuovocoronavirus/dettaglioContenutiNuovoCoronavirus.jsp?lingua=italiano&id=5351&area=nuovoCoronavirus&menu=vuoto" target="_blank"> Ministero 
+          della Salute </a>sulla situazione COVID-19 in Italia. 
           
         </p>
       
       </div>
      
-      <div class="contatore">
+      <div class="data selectable">
+        <a href="http://www.salute.gov.it/portale/nuovocoronavirus/dettaglioContenutiNuovoCoronavirus.jsp?lingua=italiano&id=5351&area=nuovoCoronavirus&menu=vuoto" target="_blank">
         <table>
-          <caption><i class="fas fa-head-side-mask"></i> <span>Contatore infetti <i class="date">[25/05/2015]</i></span></caption>
+          <caption><i class="fas fa-head-side-mask"></i> <span class="table-name">Dati COVID-19 <i class="date">[25/05/2015]</i></span></caption>
           <tr>
-            <th class="positive">Positivi</th>
-            <td class="positive"><b class="plus">+</b> 2500</td>
+            <th class="table-head positive">Positivi</th>
+            <td class="table-data positive"> 2500</td>
           </tr>
           <tr>
-            <th class="decease">Decessi</th>
-            <td class="decease-cnt"><b class="minus">+</b> 250</td>
+            <th class="table-head decease">Decessi</th>
+            <td class="table-data decease"><b class="minus">+</b> 250</td>
           </tr>
           <tr>
-            <th class="recovered">Guariti</th>
-            <td class="recovered"> 350</td>
+            <th class="table-head recovered">Guariti</th>
+            <td class="table-data recovered">+  350</td>
           </tr>
           <tr>
-            <th class="total">Totale</th>
-            <td class="total-cnt">210.000</td>
+            <th class="table-head total">Totale</th>
+            <td class="table-data total">210.000</td>
           </tr>
         </table>
-
+        </a>
       </div>
   </section>
 
@@ -234,9 +236,11 @@
       <h4><i class="far fa-window-restore"></i> Altre informazioni</h4>
       <ul>
         <li><a href="http://www.governo.it/" target="_blank">Governo</a></li>
+        <li><a href="http://www.salute.gov.it" target="_blank">Ministero della Salute</a></li>
         <li><a href="https://www.interno.gov.it/it" target="_blank">Ministero degli Interni</a></li>
         <li><a href="http://www.protezionecivile.gov.it/" target="_blank">Protezione Civile</a></li>
         <li><a href="https://www.istruzione.it/coronavirus/link.html" target="_blank">Per l'istruzione</a></li>
+
 
       </ul>
 
