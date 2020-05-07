@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  font-size: 55px;
+  font-size: 52.5px;
   text-align: left;
 }
 
@@ -43,7 +43,7 @@ h4 {
 p, span {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1.5px;
-  font-size: 27.5px;
+  font-size: 25px;
   line-height: 40px;
   text-align: justify;
 }
@@ -126,7 +126,8 @@ transition: .4s;
 }
 
 .navbar .fas {
-  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 2px 2px rgba(0,102,204,0);
+  text-shadow: -1px 0 #0066CC, 0 1px #0066CC, 1px 0 #0066CC, 0 -1px #0066CC;
+
 }
 
 .nav-titles li a {
@@ -137,18 +138,19 @@ transition: .4s;
   padding: 17.5px 18px;
   font-family: 'Nunito', sans-serif;
   font-weight: lighter;
+  width: 90px;
   
 }
 
-.nav-titles li:hover, .right-navbar li:hover {
+.nav-titles li:hover {
   background-color: #0066CC;
   color: #F2F0FC;
   border-bottom: 5px solid #0066CC;
   transition: .2s;
 }
 
-.nav-titles li:hover a, .right-navbar li:hover a {
-  transition: .5s;
+.nav-titles li:active {
+  background-color: #
 }
 
 .nav-titles li:first-child {
@@ -189,6 +191,7 @@ transition: .4s;
   text-transform: uppercase;
   transition: .5s;
   color: #0066CC;
+  width: max-content;
 }
 
 #logo:hover {
@@ -203,13 +206,18 @@ transition: .4s;
   }
 
 
-  .login-container {
-    display: flex;
-    flex-direction: column;
+  .right-navbar li {
     background-color: #F2F0FC;
     border-left: 2.5px solid #ccc;
     padding: 10px 10px 0 10px;
-    height: 76.5px;
+    height: 80px;
+  }
+
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+
   }
 
   .navbar li:hover {
@@ -263,7 +271,7 @@ header {
 
 
 .main-title .fas {
-  text-shadow: 2px 2px 0 #1a1a1a, 2px -2px 0 #1a1a1a, -2px 2px 0 #1a1a1a, -2px -2px 0 #1a1a1a, 2px 0px 0 #1a1a1a, 0px 2px 0 #1a1a1a, -2px 0px 0 #1a1a1a, 0px -2px 0 #1a1a1a;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .fa-newspaper {
@@ -282,6 +290,9 @@ header {
 .fa-virus {
   color: #f10001;
 }
+
+
+/*News*/
 
 .article-container {
   max-width: 992px;
@@ -398,64 +409,25 @@ header {
   height: max-content;
 }
 
-.prev-arrow-and-text-container,.next-arrow-and-text-container {
-  display: inline-flex;
-  justify-content: space-between;
+.arrow-slideshow button {
+  border-style: none;
   background-color: #F2F0FC;
   color: #0066CC;
   border-radius: 7.5px;
-  height: 55px;
-  width: 235px;
-  padding: 25px 30px 0px 30px;
+  height: 75px;
+  width: 295px;
   transition: .5s;
-}
-
-.prev-arrow-and-text-container:hover,.next-arrow-and-text-container:hover {
-
-
-}
-
-.prev-arrow-and-text-container:active,.next-arrow-and-text-container:active {
-  color: rgb(179, 179, 179);
-  background-color: #003060;
-}
-
-.prev-text:active, .next-text:active {
-  text-shadow: 3px 2px 3px rgb(0, 68, 136);
-}
-
-
-
-.prev-arrow-and-text-container {
-}
-
-.next-arrow-and-text-container {
-}
-
-.prev-icn .fas, .next-icn  .fas{
-display: flex;
-flex-direction: column;
-font-size: 50px;
-border-radius: 2.5px;
-margin-top: -10.5px;
-}
-
-.prev-icn .fas {
-  margin-right: 10px;
-}
-
-.next-icn .fas {
-  margin-left: 10px;
-}
-
-
-.prev-text span, .next-text span {
   font-family: "Baloo 2", sans-serif;
   letter-spacing: 1.5px;
-  font-size: 30px;
+  font-size: 35px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
+.arrow-slideshow p {
+  color: #0066CC;
+  font-weight: bold;
+}
 
 
 /**/
