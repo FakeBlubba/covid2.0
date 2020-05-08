@@ -143,14 +143,9 @@ transition: .4s;
 }
 
 .nav-titles li:hover {
-  background-color: #0066CC;
   color: #F2F0FC;
   border-bottom: 5px solid #0066CC;
   transition: .2s;
-}
-
-.nav-titles li:active {
-  background-color: #
 }
 
 .nav-titles li:first-child {
@@ -222,6 +217,10 @@ transition: .4s;
 
   .navbar li:hover {
     background-color: #dae2f7;
+  }
+
+  .navbar li:active {
+    background-color: #B0C1EE;
   }
 
   .login-container .fa-user-circle {
@@ -424,6 +423,14 @@ header {
   cursor: pointer;
 }
 
+.arrow-slideshow button:hover {
+  background-color: #DAE2F7;
+}
+
+.arrow-slideshow button:active {
+  background-color: #B0C1EE;
+}
+
 .arrow-slideshow p {
   color: #0066CC;
   font-weight: bold;
@@ -438,9 +445,7 @@ header {
   margin-top: -30px;
 }
 
-.main-introduction p {
-  
-}
+
 /*Sezione consigli sanitari*/
 
 .warning-container {
@@ -459,7 +464,7 @@ header {
   height: 90px;
   padding: 15px 20px;
   margin: 0 5px;
-
+  background-color: #F2F0FC;
   transition: .2s;
 }
 
@@ -470,10 +475,13 @@ header {
   font-size: 22.5px;
   letter-spacing: .2px;
   cursor: default;
+
+  color: #0066CC;
 }
 
 .warning-message .fas {
   font-size: 75px;
+  color: #0066CC;
 }
 
 
@@ -487,14 +495,13 @@ header {
 }
 
 .warning-message:first-child {
-  background-color: #FEDE00;
-  border: 4px solid #504600;
-  color: #504600;
+
+
   text-align: right;
 }
 
 .warning-message:first-child .fas {
-  color: #504600;
+
   float: left;
   margin: 18.5px -36px;
 }
@@ -505,9 +512,7 @@ header {
 }
 
 .warning-message:nth-child(2) {
-  background-color: #B4F8C8;
-  border: 4px solid #0A6625;
-  color: #0A6625;
+
   text-align: right;
 }
 
@@ -519,28 +524,24 @@ header {
 }
 
 .warning-message:nth-child(2) .fas{
-  color: #0A6625;
+
   float: left;
   margin:  -18px -36px;
 
 }
 
 .warning-message:nth-child(3) {
-  background-color: #6AB8EE;
-  border: 4px solid #140f1b;
-  color: #140f1b;
+
 }
 
 .warning-message:nth-child(3) .fas{
-  color: #140f1b;
+
   float: right;
   margin:  -11px -36px;
 }
 
 .warning-message:nth-child(4) {
-  background-color: #A8D9F8;
-  border: 4px solid #3b050f;
-  color: #3b050f;
+
 }
 
 .warning-message:nth-child(4) span {
@@ -549,7 +550,7 @@ header {
 }
 
 .warning-message:nth-child(4) .fas {
-  color: #3b050f;
+
   margin: -16.5px -35.5px;
   float: right;
 }
@@ -575,6 +576,9 @@ header {
   margin: 25px auto;
 }
 
+.card:active {
+  background-color: #B0C1EE;
+}
 
 .card > img {
   width: 100%;
@@ -777,7 +781,7 @@ footer {
   padding-top: 50px;
   transition: .5s;
   color: #252525;
-
+  display: block;
 }
 
 #back-to-the-top > a {
