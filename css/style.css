@@ -872,6 +872,7 @@ footer {
     vertical-align: middle;
     margin-top: -75px;
     z-index: 100;
+    border-bottom: 1.5px solid #ccc;
   }
 
   .left-tablet-navbar {
@@ -1076,7 +1077,7 @@ footer {
     list-style-type: none;
     height: 62.5px;
     padding: 0;
-    border-bottom: 3.5px solid #ccc;
+    border-bottom: 1.5px solid #ccc;
   }
 
   .mobile-navbar li {
