@@ -66,6 +66,10 @@ body {
   margin: 0;
 }
 
+.main-title:first-child {
+  padding-top: 50px;
+}
+
 .selectable {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -96,7 +100,9 @@ transition: .4s;
   margin: 0 auto;
   background-color: #F2F0FC;
   display: flex;
-
+  position: fixed;
+  z-index: 100;
+  margin-top: -74px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -174,10 +180,6 @@ transition: .4s;
   background-color: #F2F0FC;
   transition: none;
 }
-
-
-
-
 
 #logo {
   font-family: "Saira", serif;
@@ -439,15 +441,9 @@ header {
   font-weight: bold;
 }
 
-.number {
-  counter-increment: myIndex;
-  content:counter(myIndex);
+#smll-sldshw {
+  display: none;
 }
-
-.number {
-
-}
-
 /*Miscellaneus*/
 
 .main-introduction {
@@ -860,8 +856,8 @@ footer {
   }
 
 .navbar li {
-  width: 100px;
-  padding: 0 auto;
+  padding: 0 10px;
+  width: max-content;
 }
 
 .navbar li:last-child {
@@ -977,11 +973,6 @@ footer {
     overflow: hidden;
   }
 
-  .main-title:first-child {
-    margin-top: 100px;
-    margin-bottom: 40px;
-  }
-
   .navbar {
     display: none;
   }
@@ -1012,6 +1003,7 @@ footer {
     justify-content: space-between;
     margin: 15px 0 12.5px 25px;
     font-size: 30px;
+
   }
 
   .mobile-navbar li a {
@@ -1045,13 +1037,19 @@ footer {
 
   /*News*/
 
-  .arrow-slideshow button:first-child {
-    content: "<i class="fas fa-arrow-alt-circle-left"></i>";
+  #big-sldshw {
+    display: none;
   }
 
-  .arrow-slideshow button:first-child {
-    content: "<i class="fas fa-arrow-alt-circle-right"></i>";
+  #smll-sldshw {
+    display: inline-flex;
   }
+
+  #smll-sldshw button {
+    font-size: 50px;
+    height: max-content;
+  }
+
 
   /*Consigli*/
 
