@@ -79,9 +79,9 @@ body {
 
 .selectable:hover {
   -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
-transition: .4s;
+  -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+  transition: .4s;
 }
 
 .container {
@@ -149,7 +149,7 @@ transition: .4s;
   font-family: 'Nunito', sans-serif;
   font-weight: lighter;
   width: 90px;
-  
+
 }
 
 .nav-titles li:hover {
@@ -199,53 +199,53 @@ transition: .4s;
   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(0,102,204,0);
 }
 
-  .right-navbar {
-    justify-content: end;
-    background-color: #F2F0FC;
-    width: max-content;
+.right-navbar {
+  justify-content: end;
+  background-color: #F2F0FC;
+  width: max-content;
 
-  }
-
-
-  .right-navbar li {
-    background-color: #F2F0FC;
-    border-left: 1.5px solid #ccc;
-    padding: 10px 10px 0 10px;
-    height: 80px;
-  }
+}
 
 
-  .login-container {
-    display: flex;
-    flex-direction: column;
+.right-navbar li {
+  background-color: #F2F0FC;
+  border-left: 1.5px solid #ccc;
+  padding: 10px 10px 0 10px;
+  height: 80px;
+}
 
-  }
 
-  .navbar li:hover {
-    background-color: #dae2f7;
-  }
+.login-container {
+  display: flex;
+  flex-direction: column;
 
-  .navbar li:active {
-    background-color: #B0C1EE;
-  }
+}
 
-  .login-container .fa-user-circle {
-    text-align: center;
-    font-size: 37.5px;
-    color: rgb(240, 240, 240);
-  }
+.navbar li:hover {
+  background-color: #dae2f7;
+}
 
-    .login-container span {
-      font-family: "Saira", sans-serif;
-      text-align: center;
-      font-size: 22.5px;
-      color: rgb(240, 240, 240);
-    }
+.navbar li:active {
+  background-color: #B0C1EE;
+}
 
-    .login-container .fa-user-circle {
-      color: #0066CC;
-      text-shadow: none;
-    }
+.login-container .fa-user-circle {
+  text-align: center;
+  font-size: 37.5px;
+  color: rgb(240, 240, 240);
+}
+
+.login-container span {
+  font-family: "Saira", sans-serif;
+  text-align: center;
+  font-size: 22.5px;
+  color: rgb(240, 240, 240);
+}
+
+.login-container .fa-user-circle {
+  color: #0066CC;
+  text-shadow: none;
+}
 
 #login {
   text-transform: uppercase;
@@ -338,7 +338,7 @@ header {
 .news-source {
   font-family: "Baloo 2", sans-serif;
   font-size: 30px;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
   color: #252525;
   opacity: .9;
   text-align: right;
@@ -384,7 +384,7 @@ header {
   background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(107,107,107,1) 50%, rgba(255,255,255,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(107,107,107,1) 50%, rgba(255,255,255,1) 100%);
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(107,107,107,1) 50%, rgba(255,255,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1); 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
 }
 
 .bell {
@@ -392,7 +392,7 @@ header {
   background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,215,0,1) 50%, rgba(255,255,255,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,215,0,1) 50%, rgba(255,255,255,1) 100%);
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,215,0,1) 50%, rgba(255,255,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1); 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
 }
 
 .virus {
@@ -400,7 +400,7 @@ header {
   background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(241,0,1,1) 50%, rgba(255,255,255,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(241,0,1,1) 50%, rgba(255,255,255,1) 100%);
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(241,0,1,1) 50%, rgba(255,255,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1); 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
 }
 
 .article-info-container {
@@ -719,7 +719,7 @@ footer {
 }
 
 .footer-container {
-  display: flex; 
+  display: flex;
   width: 992px;
   justify-content: space-evenly;
   margin: 45px auto;
@@ -818,7 +818,7 @@ footer {
 
 
 /*Tablet*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 767px) and (max-width: 992px) {
 
   .navbar {
     display: none;
@@ -832,22 +832,22 @@ footer {
     font-size: 52.5px;
     text-align: center;
   }
-  
+
   h2 {
     font-size: 45px;
     text-align: left;
   }
-  
+
   h3 {
     font-size: 37.5px;
     text-align: left;
   }
-  
+
   h4 {
     font-size: 30px;
   }
-  
- 
+
+
   .container {
     max-width: 768px;
   }
@@ -919,17 +919,17 @@ footer {
     width: 90px;
   }
 
-    #tablet-login {
-      width: max-content;
-      height: max-content;
-      padding: auto;
+  #tablet-login {
+    width: max-content;
+    height: max-content;
+    padding: auto;
   }
 
-    #tablet-login .fa-user-circle {
-      color: #0066CC;
-      margin-top: 5px;
+  #tablet-login .fa-user-circle {
+    color: #0066CC;
+    margin-top: 5px;
 
-    }
+  }
 
 
   /*News*/
@@ -962,7 +962,7 @@ footer {
   }
 
 
- .warning-message:nth-child(3) {
+  .warning-message:nth-child(3) {
     margin: 0;
     text-align: right;
   }
@@ -1011,25 +1011,25 @@ footer {
 }
 
 
-  /*Smartphone*/
+/*Smartphone*/
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 
   h1 {
     font-size: 45px;
     text-align: center;
   }
-  
+
   h2 {
     font-size: 37.5px;
     text-align: left;
   }
-  
+
   h3 {
     font-size: 30px;
     text-align: left;
   }
-  
+
   h4 {
     font-size: 22.5px;
   }
@@ -1184,7 +1184,7 @@ footer {
   .warning-message:nth-child(2) span {
     text-align: center;
   }
-  
+
   .warning-message:nth-child(3) span {
     text-align: center;
   }
@@ -1211,7 +1211,7 @@ footer {
   }
 
 
- .warning-message:nth-child(3) {
+  .warning-message:nth-child(3) {
     margin: 0;
     text-align: center;
     margin-bottom: 20px;
@@ -1237,7 +1237,7 @@ footer {
     flex-direction: column;
     margin: 0 auto;
   }
-  
+
 
   .card {
     max-width: 375px;
@@ -1308,7 +1308,7 @@ footer {
   .footer-container div {
     border-right: 0;
     border-left: 0;
-    border-top: 
+    border-top:
   }
 
   .footer-container h4 {
