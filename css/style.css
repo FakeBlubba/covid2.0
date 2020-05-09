@@ -1065,10 +1065,14 @@ footer {
     width: 200px;
   }
 
+  .warning-message .fas {
+    display: none;
+  }
+
   .warning-message:first-child {
     margin: 0;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
   }
 
   .warning-message:nth-child(2) {
@@ -1098,6 +1102,7 @@ footer {
 
   /*Servizi*/
 
+
   .services-container {
     width: 100%;
     flex-direction: column;
@@ -1106,23 +1111,28 @@ footer {
   
 
   .card {
-    max-width: 420px;
-    width: 90%;
+    max-width: 375px;
+    width: 100%;
+  }
+
+  .card > img {
+    height: 45%;
   }
 
   .card div {
-    height: min-content;
+    height: max-content;
+    padding-bottom: 75px;
   }
 
   .card h2 {
-    font-size: 100%;
+    font-size: 110%;
     margin: 2.5px;
     white-space: normal;
   }
 
   .card p {
     font-size: 110%;
-    line-height: 200%;
+    line-height: 150%;
   }
 
   /*Dati*/
@@ -1198,6 +1208,7 @@ footer {
   .down-footer-container {
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin: 0;
     padding: 10px 0;
   }
