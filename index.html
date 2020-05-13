@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="keywords" content="Assistenza Covid per tecnofobi">
-  <meta name="description" content="Senexilium">
+  <meta name="description" content="aiuTOcovid">
   <meta name="author" content="Bianchetti Federico">
   <link type="text/css" href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/02fb4434f0.js" crossorigin="anonymous"></script>
   <link rel="icon" href="media/favicon.png">
-  <title>Senexilium</title>
+  <title>aiuTOcovid</title>
 </head>
 
 <body id="top">
   <nav class="navbar">
     <ul class="nav-titles">
       <li><div class="box-logo">
-        <a id="logo" href="index.html">Senexilium</a></div></li>
+        <a id="logo" href="index.html">aiuTOcovid</a></div></li>
         <li><a href="#news"><i class="fas fa-newspaper"></i> Notizie</a></li>
         <li><a href="#suggestion"><i class="fas fa-hands-wash"></i> Igiene</a></li>
         <li><a href="#services"><i class="fas fa-concierge-bell"></i> Servizi</a></li>
@@ -28,7 +29,7 @@
 </nav>
 
 <nav class="tablet-navbar">
-  <div class="left-tablet-navbar"><a id="logo" href="index-html">Senexilium</a></div>
+  <div class="left-tablet-navbar"><a id="logo" href="index-html">aiuTOcovid</a></div>
 
   <ul class="middle-navbar">
     <li><a href="#news"><i class="fas fa-newspaper"></i></a></li>
@@ -40,13 +41,33 @@
   <div class="right-tablet-navbar"><a id="tablet-login" href="#accesso"> <i class="fas fa-user-circle"></i></a> </div>
 </nav>
 
-
-
-
 <nav class="mobile-navbar">
+  <div class="mobile-navbar-menu">
+    <div class="mobile-navbar-header">
+    <div><a id="logo" href="index.html">aiuTOcovid</a></div>
+    <div class="close-btn-container"><a class="close-menu-btn" href="#"> <i class="fas fa-times"></i> </a></div>
+  </div>
+  <div class="mobile-navbar-body">
+    <ul>
+      <li><a href="#news"><i class="fas fa-newspaper"></i> Notizie</a></li>
+      <li><a href="#suggestion"><i class="fas fa-hands-wash"></i> Igiene</a></li>
+      <li><a href="#services"><i class="fas fa-concierge-bell"></i> Servizi</a></li>
+      <li><a href="#stats"><i class="fas fa-virus"></i> Dati</a></li>
+    </ul>
+    <ul class="rapid-menu">
+      <li class="list-head">Menù rapido</li>
+      <li><a class="document-link" href="#" ><i class="fas fa-file-invoice"></i> Autocertificazione</a></li>
+      <li><a href="#"><i class="fas fa-shopping-cart"></i> Richiedi la tua spesa</a></li>
+      <li><a href="#"><i class="fas fa-hand-holding-medical"></i> Dona</a></li>
+      </ul>
+    </div>
+
+
+  </div>
+
   <ul class="mobile-navbar-titles">
     <li><a id="burger-menu" href="#mobile-menu"><i class="fas fa-bars"></i></a></li>
-    <li><a id="logo" href="index.html">Senexilium</a></li>
+    <li><a id="logo" href="index.html">aiuTOcovid</a></li>
     <li><a id="mobile-login" href="#accesso"><i class="fas fa-user-circle"></i> </a></li>
   </ul>
 
@@ -209,10 +230,10 @@
 <footer>
   <div class="footer-container">
     <div class="footer-desc">
-      <h4><i class="fas fa-info-circle"></i> Cos'è Senexilium?</h4>
-      <span>Senexilium è un progetto universitario realizzato per
+      <h4><i class="fas fa-info-circle"></i> Cos'è aiuTOcovid?</h4>
+      <span>aiuTOcovid è un progetto universitario realizzato per
         fronteggiare l'emergenza epidemiologica legata COVID-19.
-        Con <b>Senexilium</b> è possibile ordinare la propria spesa
+        Con <b>aiuTOcovid</b> è possibile ordinare la propria spesa
         direttamente alla protezione civile, controllare lo stato dei
         contagi e avere le ultime notizie attendibili al fine di contrastare
         la divulgazione della disinformazione.
@@ -259,16 +280,4 @@
 </body>
 </html>
 
-
-<script>
-
-var docWidth = document.documentElement.offsetWidth;
-
-  [].forEach.call(
-    document.querySelectorAll('*'),
-    function(el) {
-      if (el.offsetWidth > docWidth) {
-        console.log(el);
-      }
-    }
-  );</script>
+ <script src="js/js.js"></script>
