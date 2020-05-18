@@ -1,17 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Chivo|Baloo+2|Maven+Pro|Nunito|PT+Sans|Roboto|Open+Sans|Saira|Allerta&display=swap');
-/*
-Fuligine: #483D3C;
-Crema: #F4EBD0;
-Rosso: #A11B1B;
-
-
-
-
-blu scuro #0086AC
-blu più chiaro #0080FF
-cieleste scuro #3399FF
-
-*/
 
 html {
   height: 100%;
@@ -1110,13 +1097,9 @@ footer {
     padding-left: 5px;
   }
 
-.rapid-menu .fas {
-  color: #0066CC;
-}
-
-.slide-active {
-
-}
+  .rapid-menu .fas {
+    color: #0066CC;
+  }
 
   #mobile-login {
     text-transform: uppercase;

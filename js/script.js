@@ -6,4 +6,7 @@ $(document).ready(function() {
   $('.close-btn-container').click(function() {
     $('.mobile-navbar-menu').removeClass('slide-active');
   });
+  $('.close-btn-container').click(function() {
+    $('.mobile-navbar-menu').removeClass('slide-active');
+  });
 });
